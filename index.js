@@ -48,7 +48,18 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+
+	for (let i = 0; i < cart.length; i++) {
+		for (let key in cart[i]) {
+			if (item == [key]) {
+			  delete cart[i];
+			  return viewCart()
+			}
+			else {
+			  return 
+			}
+		}	
+	}
 }
 
 function placeOrder(cardNumber) {
